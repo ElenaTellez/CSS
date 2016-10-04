@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<style>
+
+	body{
+		width: 800px;
+		height: 400px;
+		background-color: grey;
+	
+	}
+	
+	.absoluto {
+		top: 30x;
+		left: 20px;
+		position: absolute;
+		width: 200px;
+		height: 200px;
+		background-color: yellow;
+	}
+	
+	.relativo {
+		top: 30px;
+		left: 20px;
+		position: relative;
+		width: 200px;
+		height: 200px;
+		background-color: red;
+		opacity:0.7;
+	}
+	.relativoDos {
+		top: 30px;
+		left: 20px;
+		position: relative;
+		width: 200px;
+		height: 200px;
+		background-color: blue;
+		opacity:0.7;
+	}	
+
+
+	
+</style>
+<body>
+
+		<div class ="absoluto">
+			<div class ="relativo">
+				<div class ="relativoDos"></div>
+			</div>	
+		</div>
+</body>		
+ </html>
