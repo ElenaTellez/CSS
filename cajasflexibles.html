@@ -1,0 +1,115 @@
+<!DOCTYPE HTML>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Cajas Flexibles</title>
+    <style type="text/css">
+	
+		.flex-container {
+			width: 250px;
+			height: 140px;
+			padding: 5px;
+			margin 10px auto;
+			background-color: blue;
+			display: -webkit-flex;
+			display: ms-flexbox;
+			display: inline-flex;
+			flex-direction: row-reverse;
+			flex-wrap:wrap;
+		}
+		
+		.flex-item {
+			width: 50px;
+			height: 50px;
+			background-color: yellow;
+			margin: 5px;
+		}
+		
+		.flex-item p {
+			width: 100%;
+			text-aling: center;
+		}
+	
+		
+		.flex-containerDos {
+			width: 250px;
+			height: 140px;
+			padding: 5px;
+			margin 10px auto;
+			background-color: blue;
+			display: -webkit-flex;
+			display: ms-flexbox;
+			display: inline-flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			align-items: baseline; // coge la linea de la parte baja del contenido 
+			//strecht no funciona si abajo ponemos un height específico
+		}
+			
+		.flex-itemDos {
+			width: 50px;
+			height: 50px;
+			background-color: yellow;
+			margin: 5px;
+		}
+		
+		.flex-itemDos p {
+			width: 100%;
+			text-aling: center;
+		}
+		
+		#alto{
+			height: 75px;
+			font-size:2em;
+			}
+    
+    </style>
+</head>
+<body>
+    <h1 class="title"> Flexbox </h1>
+	
+	<div class = "flex-container">
+        <div class ="flex-item">
+        <p class="flex-item">1</p>
+        </div>
+        <div class ="flex-item">
+        <p class="flex-item">2</p>
+        </div>
+        <div class ="flex-item">
+        <p class="flex-item">3</p>
+		</div>
+		<div class ="flex-item">
+        <p class="flex-item">4</p>
+        </div>
+        <div class ="flex-item">
+        <p class="flex-item">5</p>
+        </div>
+        <div class ="flex-item">
+        <p class="flex-item">6</p>
+		</div>
+	</div>
+	
+	<h1 class="title"> FlexFlow </h1>
+	
+	<div class = "flex-containerDos">
+        <div class ="flex-itemDos">
+        <p class="flex-itemDos">1</p>
+        </div>
+        <div class ="flex-itemDos">
+        <p class="flex-itemDos">2</p>
+        </div>
+        <div class ="flex-itemDos">
+        <p class="flex-itemDos">3</p>
+		</div>
+		<div class ="flex-itemDos">
+        <p class="flex-itemDos">4</p>
+        </div>
+        <div class ="flex-itemDos">
+        <p class="flex-itemDos">5</p>
+        </div>
+        <div class ="flex-itemDos">
+        <p id="alto" class="flex-itemDos">6</p>
+		</div>
+	</div>
+</body>
+</html>

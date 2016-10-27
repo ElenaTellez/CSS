@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style type="text/css">
+
+span {
+	background-image:url("sprites.png");/*nota musical*/
+	/*background-repeat: no-repeat;no usar si son varios los sprites de una misma imagen*/ 
+	width: 30px;
+	height: 30px;
+	display: inline-block; /*Elemento funciona en linea y no da salto de linea*/
+	vertical-align:middle;
+	}
+	
+#uno {
+	background-position: -32px -45px;
+	}
+
+#dos {
+	background-position: 30px 45px;
+	}	
+	
+body { /*LOS NAVEGADORES COGEN POR DEFECTO 10PX DE TAMAÑO*/
+font-size: 62.5%;
+}
+h1 {
+font-size: 2em;
+/* 2em = 2 x 10px = 20px 	OJO: EM SE HEREDA, POR LO QUE UN DIV DENTRO DE UN CAMBIA EL TAMAÑO */
+}
+p {
+font-size: 1.4em; /* 1.4em x 10px = 14px */
+}	
+
+	
+
+</style>
+</head>
+<body>
+	
+<h1>"Mi primer sprite" Tiene 20 px</h1>
+	
+<p>
+	<span id="uno"></span> Mi primer sprite
+</p>
+<p>
+	<span id="dos"></span> Mi segundo sprite 
+</p>
+</body>		
+</html>
