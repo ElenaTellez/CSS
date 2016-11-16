@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Animacion barco</title>
+    <style type="text/css">
+      
+      body {
+          background-image: url("fondo.jpg");
+        }
+      
+      #container {
+          background-image: url("background.png");
+          width: 600px;
+          height: 400px;
+          top: 70px;
+          left:300px;
+          position:absolute;
+          overflow: hidden;
+        }
+
+      #barco{
+        width: 250px;
+        height: 220px;
+        top:80px;
+        background-image: url("Bote.png");
+        animation-name: animacionBarco; 
+        animation-duration: 2s; 
+        animation-iteration-count: infinite;
+        position:absolute;
+      }        
+      
+      @keyframes animacionBarco {
+          
+          from{
+              top:180px;
+          }
+          to{ 
+              top:175px;
+        }  
+      }
+      
+
+      #fondoBarco{
+        width: 500px;
+        height: 250px;
+        left:10px;
+        animation-name: animacionFondoBarco; 
+        animation-duration: 5s; 
+        animation-iteration-count: 1;
+        position:relative; 
+      }
+
+      
+      @keyframes animacionFondoBarco {
+          from{
+              left:-260px;
+          } 
+          to{ 
+          left:10px;
+        }  
+      }
+
+      #aguaFondo{
+        width: 1000px;
+        height: 84px;
+        left: -100px;
+        background-image: url("agua-fondo.png");
+        top:300px;
+        position:absolute; 
+        animation-name: muevoOla; 
+        animation-duration: 2s; 
+        animation-iteration-count: infinite;
+            
+      }
+
+      #aguaFrente{
+        width: 1000px;
+        height: 77px;
+        left: -100px;
+        background-image: url("agua-frente.png");
+        top:350px;
+        position:absolute; 
+        animation-name: muevoOlaDos; 
+        animation-duration: 2s; 
+        animation-iteration-count: infinite;
+        animation-delay: 3s;
+        
+      }
+
+      
+       @keyframes muevoOla {
+        0%   {left:-100px; top:301px;}
+        25%  {left:-99px; top:300px;}
+        50%  {left:-98px; top:299px;}
+        75%  {left:-99px; top:300px;}
+      }
+
+      @keyframes muevoOlaDos {
+
+        0%   {left:-100px; top:351px;}
+        25%  {left:-99px; top:350px;}
+        50%  {left:-98px; top:349px;}
+        75%  {left:-99px; top:350px;}
+      }
+
+
+
+    </style>
+
+
+  </head>
+
+  <body>
+
+  <div id="container">  
+    
+        <div id="aguaFondo"></div>
+        <div id="fondoBarco"><div id="barco"> </div></div>    
+        <div id="aguaFrente"></div>
+    
+  </div>  
+  </body>
+</html>
