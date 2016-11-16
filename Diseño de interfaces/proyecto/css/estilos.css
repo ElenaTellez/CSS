@@ -1,0 +1,170 @@
+/*
+
+	
+	Author: María Elena Téllez Santana
+	Interfaz de Administracción:
+	
+	 	Esta interfaz estará creada íntegramente con el Framework Bootstrap.	
+	   Se utilizará el tipo rejilla para dar una composición diferente dependiendo de las resoluciones: Móvil, Tablet y Monitor.
+	
+	*************************************************************************
+
+	0. 	CSS Reset
+	1.	Document Setup
+	2.	Header Styles
+	3.	Navigation & Menus
+	4.	Main Content Styles
+	5. 	Comments
+	6. 	Grid Styles
+	7.	Post Content Styles
+	8. 	Slider
+	9.	Pagination
+	10.	Footer Styles
+	11.	Page Templates & Special styles
+	12.	Contact form
+	13.	Widgets
+	14.	Responsive
+
+*/
+
+/*-------------------------------------------------------------------------------------------*/
+/* 0. RESET - http://meyerweb.com/eric/tools/css/reset/ | v1.0 | 20080212 */
+/*-------------------------------------------------------------------------------------------*/
+
+@import url(http://fonts.googleapis.com/css?family=Merienda:700);
+
+body {
+    background:  #002966 url("../img/fondo.png") repeat;	
+	background-size:cover;	
+	width:100%;
+	color:#003d99;
+	font-family: 'Merienda';
+	font-size: 20px;
+	}
+
+div#header {
+width: 940px;
+height: 200px;
+margin: 0 auto;
+text-align: center;
+background: #4da6ff;
+border-radius:24px;
+border-style: groove;
+}
+
+div#header img {
+	width: 270px;
+	height: 150px;
+	margin-top: 25px;
+	border-style: groove;
+	
+}
+
+#container{
+	width: 940px;	
+	margin:0 auto;
+	font-size: 0.6em;
+		
+}
+
+ul {	
+	list-style-image:url(img/arrow.png);	
+	}
+
+h1{
+	text-align:center;
+	color: #002966;
+	letter-spacing:2px;
+}
+
+h3{
+	text-align:left;
+	color: #002966;
+	letter-spacing:2px;
+}
+
+div .menu ul {
+	list-style-type:none;
+	list-style-image:none;
+	margin: 10px;
+	padding:0;
+	display: flex;
+	flex-direction:row; /*por defecto es row horizontal*/	 
+	}
+	
+div .menu ul li{
+	flex-grow:1; /*separa los elementos de la lista*/
+	}	
+	
+div .menu ul li a{
+	background-color: #4da6ff;
+	color:#ffffe6;
+	font-weight: bold;
+	display:block;/*este elemento se comporta en linea y quiero que lo haga en bloque para usar el ancho del contedor*/
+	margin-right:1px;
+	text-align:center;
+	text-decoration:none;
+	padding:0.4em; /*50% del tamaño del body*/
+	border-radius: 24px; 
+	border-style: groove;
+	cursor: pointer;
+	}
+	
+div .menu ul li a:hover {
+	background-color:green;
+	}
+	
+img.alignleft {
+display: inline;
+float: left;
+margin-right: 10px;
+}
+
+img.alignright {
+display: inline;
+float: right; 
+}
+
+.contenido {
+	background-color: #4da6ff;
+	text-align: justify;
+	padding: 30px;
+	border-radius: 24px;
+	border-style: groove;
+}
+
+#amplio:hover{		 
+	width: 600px;	
+	}
+#amplio {        
+    -webkit-transition: width 2s, height 4s; /* For Safari 3.1 to 6.0 */
+    transition: width 2s, height 4s;
+}
+
+div#footer{
+	width: 940px;	 
+	float:left;	 
+	margin-top:10px;
+	margin-bottom:30px;
+	padding-top:10px;
+	border:3px solid white;
+	border-style: groove;
+	background-color: #4da6ff;
+	border-radius: 24px;
+}
+div#footer p{
+	font-weight:bold;
+	font-family:calibri arial helvetica sans-serif;
+	text-transform: uppercase;
+	font-size:10px;
+	color:#ffffe6;
+	padding-left:20px;	
+	padding-right:20px;
+}	
+
+div#comentario p{
+	font-weight:bold;
+	font-family:calibri arial helvetica sans-serif;
+	font-size:0.9em;
+	color:#ffffe6;	
+}	
